@@ -8,7 +8,7 @@ var Frase = function (frase) {
 }
 
 /**
- * Inseri uma nova frase
+ * Insere uma nova frase.
  * 
  * @param {*} frase
  * @param {*} result 
