@@ -16,9 +16,9 @@ app.get('/'), (req, res) => {
      res.send("Olá mundo!");
 }
 
-const livroRoutes = require("./src/routes/frase.routes");
+const fraseRoutes = require("./src/routes/frase.routes");
 
-app.use("/api/v1/frases", livroRoutes)
+app.use("/api/v1/frases", fraseRoutes)
 
 app.listen(port, () => {
     console.log(`O servidor está executando na porta: ${port}`);
