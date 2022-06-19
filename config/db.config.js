@@ -1,3 +1,10 @@
+/**
+ * db.config 
+ * 
+ * @author Beatriz Santos Andrade
+ * @version 1.0.0
+ */
+
 'use strict';
 
 const mysql = require('mysql');
@@ -10,11 +17,8 @@ const dbConn = mysql.createConnection({
 });
 
 dbConn.connect(function(err){
-    if(err) {
+    if(err) 
         throw err
-    } else {
-        console.log("Conectado com sucesso!");
-   }
 });
 
 module.exports = dbConn;

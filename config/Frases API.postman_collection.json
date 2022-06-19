@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "2ab67878-f8b4-47b0-a247-cb8a6721baa9",
+		"name": "Frases API",
+		"description": "**Tópicos Avançados em Desenvolvimento de Web - III Unidade**\n\n**Aluna:** Beatriz Santos Andrade",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15690160"
+	},
+	"item": [
+		{
+			"name": "Retorna frases",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9000/api/v1/frases",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"v1",
+						"frases"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Retorna frase com id 2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9000/api/v1/frases/2",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"v1",
+						"frases",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastra nova frase",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fre_texto\": \"Eduquem as crianças, para que não seja necessário punir os adultos.\",\r\n    \"fre_autor\": \"Pitágoras\",\r\n    \"fre_cadastro\": \"2022-06-19\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9000/api/v1/frases",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"v1",
+						"frases"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualiza texto da frase com id 2",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fre_texto\": \"Atualizando o texto...\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9000/api/v1/frases/2",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"v1",
+						"frases",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Apaga frase com id 3",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:9000/api/v1/frases/3",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"v1",
+						"frases",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

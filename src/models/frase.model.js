@@ -1,3 +1,10 @@
+/**
+ * frase.model 
+ * 
+ * @author Beatriz Santos Andrade
+ * @version 1.0.0
+ */
+
 'use strict';
 
 var dbConn = require ("../../config/db.config");
@@ -5,6 +12,7 @@ var dbConn = require ("../../config/db.config");
 var Frase = function (frase) {
     this.fre_texto = frase.fre_texto;
     this.fre_autor = frase.fre_autor;
+    this.fre_cadastro = frase.fre_cadastro;
 }
 
 /**

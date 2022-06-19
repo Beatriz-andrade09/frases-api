@@ -1,3 +1,10 @@
+/**
+ * frase.routes 
+ * 
+ * @author Beatriz Santos Andrade
+ * @version 1.0.0
+ */
+
 const express = require("express");
 const router = express.Router();
 const fraseController = require("../controller/frase.controller");
